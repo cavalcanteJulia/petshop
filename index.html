@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Patinhas Store – Produtos Premium para Pets</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#inicio" class="nav-logo">
+    <div class="nav-logo-icon">🐾</div>
+    <div class="nav-logo-text">
+      <strong>Patinhas Store</strong>
+      <span>Produtos Premium para Pets</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#inicio">Início</a></li>
+    <li><a href="#loja">Loja</a></li>
+    <li><a href="#sobre">Sobre</a></li>
+    <li><a href="#footer">Contato</a></li>
+  </ul>
+  <button class="nav-cart" aria-label="Carrinho">🛒</button>
+</nav>
+
+<!-- HERO -->
+<section id="inicio">
+  <div class="hero-content">
+    <div class="hero-badge">✨ Novidade: Frete Grátis em Compras Acima de R$ 150</div>
+    <h1 class="hero-title">Tudo que Seu Pet<br>Merece em um Lugar</h1>
+    <p class="hero-desc">Descubra nossa coleção exclusiva de produtos premium. Qualidade superior, ingredientes naturais e designs pensados com carinho para o bem-estar do seu companheiro.</p>
+    <div class="hero-buttons">
+      <a href="#loja" class="btn-primary">Explorar Produtos</a>
+      <a href="#loja" class="btn-outline">Ver Ofertas</a>
+    </div>
+  </div>
+  <div class="hero-image">
+    <img src="https://images.unsplash.com/photo-1601979031925-424e53b6caaa?w=600&q=80" alt="Pet fofo">
+  </div>
+</section>
+
+<!-- SOBRE / FEATURES -->
+<section id="sobre">
+  <div class="features-grid">
+    <div class="feature-card">
+      <div class="feature-icon">🚚</div>
+      <div class="feature-title">Entrega Expressa</div>
+      <div class="feature-desc">Receba em até 48h em todo Brasil</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🛡️</div>
+      <div class="feature-title">Compra 100% Segura</div>
+      <div class="feature-desc">Proteção total dos seus dados</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">❤️</div>
+      <div class="feature-title">Qualidade Premium</div>
+      <div class="feature-desc">Produtos selecionados com expertise</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🎧</div>
+      <div class="feature-title">Suporte Dedicado</div>
+      <div class="feature-desc">Atendimento especializado 24/7</div>
+    </div>
+  </div>
+  <div class="about-block">
+    <h2>Sobre a Patinhas Store</h2>
+    <p>Somos apaixonados por pets e comprometidos com o bem-estar dos seus companheiros. Nossa missão é oferecer produtos premium, selecionados com cuidado, para que cada pet tenha a vida que merece. Desde 2020 atendemos tutores em todo o Brasil com qualidade, carinho e confiança.</p>
+  </div>
+</section>
+
+<!-- FLASH SALE -->
+<div class="flash-sale">
+  <div class="flash-content">
+    <div class="flash-badge">⚡ Oferta Relâmpago</div>
+    <h2 class="flash-title">Mega Liquidação<br>de Fevereiro</h2>
+    <p class="flash-desc">Até 50% de desconto em produtos selecionados + Frete Grátis para compras acima de R$ 150</p>
+    <p class="flash-valid">⏰ Promoção válida até 31/02/2024</p>
+    <a href="#loja" class="btn-white">Aproveitar Ofertas</a>
+  </div>
+  <div class="flash-cards">
+    <div class="flash-card">
+      <div class="flash-pct">50% OFF</div>
+      <div class="flash-label">Rações Premium</div>
+    </div>
+    <div class="flash-card">
+      <div class="flash-pct">40% OFF</div>
+      <div class="flash-label">Brinquedos</div>
+    </div>
+    <div class="flash-card">
+      <div class="flash-pct">30% OFF</div>
+      <div class="flash-label">Higiene</div>
+    </div>
+    <div class="flash-card">
+      <div class="flash-pct">Frete Grátis</div>
+      <div class="flash-label">Acima de R$150</div>
+    </div>
+  </div>
+</div>
+
+<!-- LOJA -->
+<section id="loja">
+
+  <!-- Filtros de Categoria -->
+  <div class="shop-filters">
+    <button class="filter-btn active" data-cat="todos">
+      <svg class="filter-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+      Todos Produtos
+    </button>
+    <button class="filter-btn" data-cat="alimentacao">
+      <svg class="filter-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>
+      Alimentação
+    </button>
+    <button class="filter-btn" data-cat="brinquedos">
+      <svg class="filter-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="9" cy="10" r="1.5" fill="currentColor"/><circle cx="15" cy="10" r="1.5" fill="currentColor"/><path d="M9 15s1 1.5 3 1.5 3-1.5 3-1.5"/></svg>
+      Brinquedos
+    </button>
+    <button class="filter-btn" data-cat="higiene">
+      <svg class="filter-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z"/></svg>
+      Higiene & Beleza
+    </button>
+  </div>
+
+  <!-- Grid de Produtos -->
+  <div class="shop-grid" id="shopGrid">
+
+    <!-- ALIMENTAÇÃO -->
+    <div class="shop-card" data-cat="alimentacao">
+      <div class="shop-img-wrap">
+        <img src="img/racaocachorro.webp" alt="Ração Premium">
+        <span class="shop-price-tag">R$ 45,99</span>
+      </div>
+      <div class="shop-info">
+        <div class="shop-name">Ração Premium para Cães</div>
+        <div class="shop-desc">Nutrição de alta qualidade para seu melhor amigo</div>
+        <button class="btn-cart">🛒 Adicionar ao Carrinho</button>
+      </div>
+    </div>
+
+    <div class="shop-card" data-cat="alimentacao">
+      <div class="shop-img-wrap">
+        <img src="img/racaogato.webp" alt="Ração Gato">
+        <span class="shop-price-tag">R$ 38,99</span>
+      </div>
+      <div class="shop-info">
+        <div class="shop-name">Ração Orgânica para Gatos</div>
+        <div class="shop-desc">Nutrição saudável e natural para gatos</div>
+        <button class="btn-cart">🛒 Adicionar ao Carrinho</button>
+      </div>
+    </div>
+
+    <div class="shop-card" data-cat="alimentacao">
+      <div class="shop-img-wrap">
+        <img src="img/petisco.webp" alt="Petisco">
+        <span class="shop-price-tag">R$ 15,99</span>
+      </div>
+      <div class="shop-info">
+        <div class="shop-name">Petiscos de Treinamento</div>
+        <div class="shop-desc">Recompensas perfeitas para treinos</div>
+        <button class="btn-cart">🛒 Adicionar ao Carrinho</button>
+      </div>
+    </div>
+
+    <!-- BRINQUEDOS -->
+    <div class="shop-card" data-cat="brinquedos">
+      <div class="shop-img-wrap">
+        <img src="img/arranhador.webp" alt="Arranhador">
+        <span class="shop-price-tag">R$ 32,99</span>
+      </div>
+      <div class="shop-info">
+        <div class="shop-name">Arranhador para Gatos</div>
+        <div class="shop-desc">Proteja seus móveis com este arranhador durável</div>
+        <button class="btn-cart">🛒 Adicionar ao Carrinho</button>
+      </div>
+    </div>
+
+    <div class="shop-card" data-cat="brinquedos">
+      <div class="shop-img-wrap">
+        <img src="img/brinquedo.webp" alt="Brinquedo Cães">
+        <span class="shop-price-tag">R$ 24,99</span>
+      </div>
+      <div class="shop-info">
+        <div class="shop-name">Brinquedo Interativo Cães</div>
+        <div class="shop-desc">Horas de diversão para cães ativos</div>
+        <button class="btn-cart">🛒 Adicionar ao Carrinho</button>
+      </div>
+    </div>
+
+    <div class="shop-card" data-cat="brinquedos">
+      <div class="shop-img-wrap">
+        <img src="img/brinquedogato.webp" alt="Varinha">
+        <span class="shop-price-tag">R$ 12,99</span>
+      </div>
+      <div class="shop-info">
+        <div class="shop-name">Varinha com Penas Gatos</div>
+        <div class="shop-desc">Diversão interativa para seu felino</div>
+        <button class="btn-cart">🛒 Adicionar ao Carrinho</button>
+      </div>
+    </div>
+
+    <div class="shop-card" data-cat="brinquedos">
+      <div class="shop-img-wrap">
+        <img src="img/coleira.webp" alt="Coleira">
+        <span class="shop-price-tag">R$ 49,90</span>
+      </div>
+      <div class="shop-info">
+        <div class="shop-name">Coleira Premium + Guia</div>
+        <div class="shop-desc">Design ergonômico e resistente</div>
+        <button class="btn-cart">🛒 Adicionar ao Carrinho</button>
+      </div>
+    </div>
+
+    <!-- HIGIENE -->
+    <div class="shop-card" data-cat="higiene">
+      <div class="shop-img-wrap">
+        <img src="img/kit.jpg" alt="Kit Higiene">
+        <span class="shop-price-tag">R$ 59,99</span>
+      </div>
+      <div class="shop-info">
+        <div class="shop-name">Kit de Higiene Completo</div>
+        <div class="shop-desc">Solução completa de higiene para todos os pets</div>
+        <button class="btn-cart">🛒 Adicionar ao Carrinho</button>
+      </div>
+    </div>
+
+    <div class="shop-card" data-cat="higiene">
+      <div class="shop-img-wrap">
+        <img src="img/shampoo.webp" alt="Shampoo">
+        <span class="shop-price-tag">R$ 28,99</span>
+      </div>
+      <div class="shop-info">
+        <div class="shop-name">Shampoo Natural Premium</div>
+        <div class="shop-desc">Limpeza suave e eficaz para todos os pets</div>
+        <button class="btn-cart">🛒 Adicionar ao Carrinho</button>
+      </div>
+    </div>
+
+    <div class="shop-card" data-cat="higiene">
+      <div class="shop-img-wrap">
+        <img src="img/condicionador.webp" alt="Condicionador">
+        <span class="shop-price-tag">R$ 28,99</span>
+      </div>
+      <div class="shop-info">
+        <div class="shop-name">Shampoo Natural Premium</div>
+        <div class="shop-desc">Limpeza suave e eficaz para todos os pets</div>
+        <button class="btn-cart">🛒 Adicionar ao Carrinho</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+<!-- NEWSLETTER -->
+<div class="newsletter" id="newsletter">
+  <div class="newsletter-icon">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="32" height="32"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="M2 7l10 7 10-7"/></svg>
+  </div>
+  <p class="newsletter-tag">Fique por Dentro das Novidades</p>
+  <h2 class="newsletter-title">Cadastre-se e receba ofertas exclusivas, dicas especializadas de cuidados e lançamentos de produtos premium para seu pet</h2>
+  <div class="newsletter-form">
+    <input type="email" placeholder="Digite seu melhor email">
+    <button>🎁 Ganhar Desconto</button>
+  </div>
+  <p class="newsletter-hint">🎁 Ganhe 10% de desconto na primeira compra ao se cadastrar</p>
+</div>
+
+<!-- FOOTER -->
+<footer id="footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="footer-logo">
+        <div class="footer-logo-icon">🐾</div>
+        <div>
+          <strong>Patinhas Store</strong>
+          <span>Premium Pet Store</span>
+        </div>
+      </div>
+      <p class="footer-desc">Tudo que seu pet precisa em um só lugar. Qualidade premium e carinho em cada produto.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Links Rápidos</h4>
+      <ul>
+        <li><a href="#sobre">Sobre Nós</a></li>
+        <li><a href="#loja">Nossos Produtos</a></li>
+        <li><a href="#">Blog &amp; Dicas</a></li>
+        <li><a href="#contato">Entre em Contato</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Categorias</h4>
+      <ul>
+        <li><a href="#loja">Alimentação Premium</a></li>
+        <li><a href="#loja">Brinquedos Interativos</a></li>
+        <li><a href="#loja">Higiene &amp; Beleza</a></li>
+        <li><a href="#loja">Acessórios Fashion</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Fale Conosco</h4>
+      <ul class="footer-contact">
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          <span>Porto Alegre - RS, 01310-100</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M22 16.92v3a2 2 0 01-2.18 2A19.79 19.79 0 013.09 5.18 2 2 0 015.09 3h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L9.09 11a16 16 0 006.91 6.91l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          <span>(11) 98765-4321</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 7 10-7"/></svg>
+          <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="41222e2f3520352e013120362724223532292e316f222e2c6f2333">[email&#160;protected]</a></span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2024 <span>Patinhas Store</span>. <br> Todos os direitos reservados. Feito com ❤️ para tutores e seus pets.</p>
+  </div>
+</footer>
+
+<script>
+  // Filtro de produtos
+  document.querySelectorAll('.filter-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var cat = this.dataset.cat;
+      document.querySelectorAll('.filter-btn').forEach(function(b) { b.classList.remove('active'); });
+      this.classList.add('active');
+      document.querySelectorAll('.shop-card').forEach(function(card) {
+        card.style.display = (cat === 'todos' || card.dataset.cat === cat) ? '' : 'none';
+      });
+    });
+  });
+
+  // Navegação suave forçada via JS
+  document.querySelectorAll('a[href^="#"]').forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      var id = this.getAttribute('href').slice(1);
+      var target = document.getElementById(id);
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
